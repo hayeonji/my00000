@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    font-weight: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Kname {
+    font-family: noto;
+    padding: 20px;
+}
+
+.Ename h3 a { 
+    font-size: 20px;
+    color: rgb(193, 193, 133);
+    padding-right: 30px;
+    font-weight: 300;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu li a {
+    padding: 0 2px;
+    font-size: 1vw;
+    display: flex;
+    color: #687b77;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu li a:hover {
+    color: #db4b2b;
+}
+
+.title h2 {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 2vw;
+}
+
+.empty{
+    width: 100%;
+    height: 100vh;
+}
+
+.main0 {
+    position: relative; /* main0를 relative로 설정하여 absolute 포지션을 사용할 수 있게 함 */
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+#summer {
+    position: absolute; /* spring을 absolute로 설정하여 main0를 차지하도록 함 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 500%;
+}
+
+.main0 .name{
+    z-index: 10; /* name을 앞으로 가져오기 위해 z-index 추가 */
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 100%;
+    max-height:80px;
+    text-align: left;
+}
+
+.name h2{
+    font-family: "Noto Serif KR", serif;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color : #db4b2b;
+}
+
+.main0 .where {
+    z-index: 10;
+    width: calc(100% - 20px); 
+    margin-left: 20px; 
+    margin-top: 10px; 
+    line-height: 180%;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #687b77;
+}
