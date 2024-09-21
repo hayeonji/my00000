@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent calc(50% - 3%), pink, transparent calc(50% + 3%));
+    background-color: #f5f5f5;
+}
+
+header {
+    width: 100%;
+    padding: 1%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Kname {
+    padding: 2%;
+}
+
+.Ename h3 a { 
+    font-size: 1.5vw;
+    color: rgb(193, 193, 133);
+    padding-right: 3%;
+    font-weight: 300;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu li a {
+    padding: 0 0.2%;
+    font-size: 2vw;
+    display: flex;
+    color: rgb(181, 181, 88);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu li a:hover {
+    color: rgb(255, 131, 193);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.center-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title {
+    flex: 1;
+    padding-left: 3%;
+}
+
+.title h4 {
+    margin-top: 6%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: rgb(117, 117, 57);
+}
+
+.title p {
+    margin-top: 2%;
+    line-height: 180%;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgb(165, 165, 165);
+}
+
+.main #clova {
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    margin-right: 10%;
+}
+
+.image {
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: auto;
+    width: 90vw;
+    height: 50vh;
+}
+
+.image > div {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+}
+
+.image > div > div {
+    width: calc(80% - 0%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.image > div > div > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    z-index: 1;
+}
+
+.라우드네모 {
+    background-image: url('/gif/라우드네모.gif');
+}
+
+.라우드원 {
+    background-image: url('/gif/라우드원.gif');
+}
+
+.네잎네모 {
+    background-image: url('/gif/네잎네모.gif');
+}
+
+.네잎원 {
+    background-image: url('/gif/네잎원.gif');
+}
+
+.블랙네모 {
+    background-image: url('/gif/블랙네모.gif');
+}
+
+.블랙원 {
+    background-image: url('/gif/블랙원.gif');
+}
+
+.널지켜네모 {
+    background-image: url('/gif/널지켜네모.gif');
+}
+
+.널지켜원 {
+    background-image: url('/gif/널지켜원.gif');
+}
+
+.빛네모 {
+    background-image: url('/gif/빛네모.gif');
+}
+
+.빛원 {
+    background-image: url('/gif/빛원.gif');
+}
+
+.세로네모 {
+    background-image: url('/gif/세로네모.gif');
+}
+
+.세모원 {
+    background-image: url('/gif/세모원.gif');
+}
+
+.자글네모 {
+    background-image: url('/gif/자글네모.gif');
+}
+
+.자글원 {
+    background-image: url('/gif/자글원.gif');
+}
+
+.공책네모 {
+    background-image: url('/gif/공책원.gif');
+}
+
+.공책원 {
+    background-image: url('/gif/공책네모.gif');
+}
+
+
+
