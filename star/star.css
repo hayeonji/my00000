@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    font-weight: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Kname {
+    font-family: noto;
+    padding: 20px;
+}
+
+.Ename h3 a { 
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding-right: 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu li a {
+    padding: 0 2px;
+    font-size: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu li a:hover {
+    color: rgb(255, 131, 193);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    font-weight: 100;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+.main #allstar-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 500%;
+}
+
+.title h2 {
+    font-weight: 200;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.empty {
+    background: linear-gradient(to bottom, rgb(147, 206, 243), rgb(133, 234, 143));
+    width: 100%;
+    height: 100vh;
+}
+
+.main0 {
+
+    width: 100%;
+    height: 80vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+}
+
+.main0 #star {
+    width: 300px;
+    height: 300px;
+    background-size: 1000px 1000px;
+    position: relative;
+    top: 80px; /* Adjust this value to move the star up */
+}
+
+.main0 .overview {
+    z-index: 10;
+    text-align: center;
+    margin-top: 80px; 
+    /* Adjust this value if needed */
+}
+
+.overview h2 {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.overview p {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height : 150%;
+    color: rgb(170, 170, 170);
+}
+
+.main1 {
+    width: 100%;
+    height: 40vh;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+
+
+.main1 .image1, .main1 .image2, .main1 .image3, .main1 .image4 {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    max-width: 25%; 
+    filter: blur(4px); 
+}
+
+.main1 .image1:hover, .main1 .image2:hover, .main1 .image3:hover, .main1 .image4:hover {
+    filter: none;
+}
+
+
+.main1 .image1 a, .main1 .image2 a, .main1 .image3 a, .main1 .image4 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px; 
+    z-index: 1;
+}
+
+
+.main1 .image1 {
+    width: 18%;
+    background-image: url("/gif/봄.gif");
+    align-self: flex-end;
+    transition: transform 0.7s;
+    opacity: 1;
+}
+
+
+
+.main1 .image2 {
+    width: 18%;
+    background-image: url("/gif/여름.gif");
+    align-self: flex-end;
+    opacity: 1;
+}
+
+.main1 .image3 {
+    width: 18%;
+    background-image: url("/gif/가을.gif"); /* 다른 이미지 URL */
+    align-self: flex-end;
+    opacity: 1;
+}
+
+.main1 .image4 {
+    width: 18%;
+    background-image: url("/gif/겨울.gif"); /* 다른 이미지 URL */
+    align-self: flex-end;
+    opacity: 1;
+}
+
