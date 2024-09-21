@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="pop.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="/java/clova2.js" defer></script>
+    <script src="/scroll.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="pop.js" defer></script>
+    <script src="pop2.js" defer></script>
+    <script src="/color.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <div class="Kname">
+                <ul class="menu">
+                    <li class="A"><a href="#">◶</a></li>
+                    <li class="B"><a href="#">•</a></li>
+                    <li class="c"><a href="#">•</a></li>
+                </ul>
+            </div> -->
+            <div class="Ename">
+                <h3>ARC.project</h3>
+            </div>
+        </nav>
+    </header>
+    <section class="maintitle">
+        <div class="type">
+            <h1>arc="1. 호, 원호 2. 둥근[활] 모양 3.호(弧)[활 모양]를 그리다." 부채꼴 ="원의 두 개의 반지름과 그 호(弧)로 둘러싸인 부분"
+            "pop it!"은 p5js를 이용해 제작한 사용자 참여형 미디어 아트이다. 널리 알려진 다양한 색의 장난감 팝잇을 미디어에서도 체험할 수 있도록 구현했다. 원 모양의 팝잇을 부채꼴 모습으로 새롭게 나타냈다. 장난감 팝잇의 다채로운 유연한 움직임을 p5js로 표현한 프로젝트이다. arc=호를 클릭하면 장난감 팟잇처럼 arc=호가 튀어나온다. R키를 누리면 원상복구 가능하다. S키를 이용해 예쁘고 마음에 드는 이미지 저장 가능하다. 주기적으로 화면이 전환되면서 다양한 색을 가진 팝잇을 경험할 수 있다.
+            <br>
+            </h1>
+        </div>
+        <div class="typewriter">
+            <h1 id="text"></h1>
+        </div>
+    </section>
+    
+    <section class="main">
+        <div class="center-content">
+            <div class="title" data-aos="fade-up" data-aos-duration="3000">
+                <h4>arc => pop it!</h4>
+                <p>부채꼴의 움직임을 통해 장난감 팝잇을 만들어냅니다. <br>
+                    'arc='의 첫 번째 프로젝트로 마우스를 이용해 팝잇을 경험할 수 있습니다.<br><br>
+                    Create a toy pop-it using the movement of a sector. <br>
+                    As the first project of 'arc=', you can experience the pop-it using the mouse.<br>
+                </p>
+            </div>
+            <div id="pop"></div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="center-content">
+            <div class="title" data-aos="fade-up" data-aos-duration="3000">
+                <h4>arc => 돌림판</h4>
+                <p>부채꼴의 움직임을 이용해 돌림판의 돌아가는 모습을 표현합니다. <br>
+                    마우스를 통해 돌림판의 색을 변경할 수 있습니다.<br><br>
+                    Express the spinning motion of a wheel using the movement of a sector. <br>
+                    You can change the color of the wheel with the mouse.<br>
+                </p>
+            </div>
+            <div id="pop2"></div>
+        </div>
+    </section>
+    <script src="typewriter.js" defer></script>
+</body>
+</html>
