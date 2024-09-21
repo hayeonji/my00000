@@ -1,0 +1,260 @@
+/* 모든 요소의 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 전체 페이지 설정 */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+/* 헤더 설정 */
+header {
+    width: 100%;
+    padding: 2%;
+    position: fixed;
+    z-index: 10;
+}
+
+/* 네비게이션 설정 */
+nav {
+    font-weight: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Kname 설정 */
+.Kname {
+    padding: 1%;
+}
+
+/* Ename 설정 */
+.Ename h3 a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-right: 1%;
+    font-weight: 300;
+}
+
+/* 메뉴 설정 */
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu li a {
+    padding: 0 2%;
+    font-size: 20px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.menu li a:hover {
+    color: rgb(255, 131, 193);
+}
+
+/* main0 설정 */
+.main0 {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 207, 222);
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+}
+
+/* 타이틀 설정 */
+.title {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    margin-top: 20%;
+    /* margin-left: 10%; */
+}
+
+.title h3 {
+    font-size: 80px;
+    font-weight: 200;
+}
+
+/* main1, main2, main3 설정 */
+.main1, .main2, .main3 {
+    background: #000000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2%;
+    text-align: left;
+    flex-direction: column;
+    position: relative;
+}
+
+/* main1, main3의 content 설정 */
+.main1 .content, .main3 .content {
+    color: rgb(255, 255, 255);
+    align-self: flex-end; /* 텍스트를 우측 상단에 정렬 */
+    margin-right: 3%; /* 여백을 조정하여 화면 안 깨지도록 설정 */
+}
+
+
+.main2 .content {
+    color: rgb(255, 255, 255);
+    align-self: flex-start; 
+    margin-left: 5%;
+    margin-right: 75%; 
+
+}
+
+/* 플라잉 버튼 설정 */
+.플라잉 {
+    margin-left: 3%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+    padding: 1.5% 2%;
+    border: none;
+    border-radius: 100px;
+    font-size: 1vw;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* 변환 효과를 부드럽게 적용 */
+}
+
+/* 호버 효과 추가 */
+.플라잉:hover {
+    transform: scale(1.2); /* 1.2배로 스케일 증가 */
+}
+
+.main1 .플라잉 {
+    background-color: #ffffff;
+    color: #9c008c;
+}
+
+.main2 .플라잉 {
+    text-align: right;
+    background-color: #04a3ff;
+    color: #ffffff;
+}
+
+.main3 .플라잉 {
+    background-color: #b03e77;
+    color: #ffffff;
+}
+
+.main1 .플라잉 a {
+    color: #9c008c;
+}
+
+.main2 .플라잉 a {
+    color: #ffffff;
+}
+
+.main3 .플라잉 a {
+    color: #ffffff;
+}
+
+/* 이미지 설정 */
+.image1 {
+    width: 20%;
+    height: auto;
+    padding-top: 20%;
+    margin-top: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* 콘텐츠 설정 */
+.content {
+    z-index: 10;
+    margin-left: 75%; /* 콘텐츠를 화면의 우측에 정렬 */
+}
+
+.content .name h2 {
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+.content .name h4 {
+    margin-top: 2%;
+    margin-left: 45%;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+/* main1의 콘텐츠 설정 */
+.main1 .content {
+    color: rgb(210, 210, 210);
+    align-self: flex-end; /* 텍스트를 우측 상단에 정렬 */
+     /* 여백을 조정하여 화면 안 깨지도록 설정 */
+}
+
+.main1 .content .name h2 {
+    color: white;
+}
+
+/* main2의 콘텐츠 설정 */
+.main2 .content .name h2 {
+    color:#9cdbff;
+    align-self: flex-start; /* 텍스트를 좌측 하단에 정렬 */
+    margin-left: 5%; /* 여백을 조정하여 화면 안 깨지도록 설정 */
+}
+
+/* main3의 콘텐츠 설정 */
+.main3 .content .name h2 {
+    color: rgb(255, 136, 160);
+    align-self: flex-end; /* 텍스트를 우측 상단에 정렬 */
+    margin-right: 10%; /* 여백을 조정하여 화면 안 깨지도록 설정 */
+}
+
+/* 모든 링크 설정 */
+a {
+    text-decoration: none;
+}
+
+/* 콘텐츠 내 위치 설정 */
+.content .where h3 {
+    margin-top: 1%;
+    width: 100%;
+    margin-left: 1%;
+    line-height: 180%;
+    font-size: 1vw;
+    font-weight: 500;
+    flex: 1;
+    padding-left: 2%;
+}
